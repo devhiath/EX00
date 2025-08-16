@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrionHost • Entrar</title>
+  <link rel="preload" href="assets/hero.webp" as="image">
+  <link rel="stylesheet" href="/EX01/📂 css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <a href="#" class="brand" aria-label="OrionHost">
+        <img src="assets/logo.svg" alt="OrionHost" height="32">
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link">Planos</a>
+        <a href="#" class="nav__link">Domínios</a>
+        <a href="#" class="nav__link">Suporte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="auth grid container">
+      <div>
+        <h1>Hospedagem rápida e segura</h1>
+        <p>Entre para gerenciar seus domínios, sites e e‑mails.</p>
+        <ul class="bullets">
+          <li>SSL gratuito</li>
+          <li>Backups diários</li>
+          <li>CDN global</li>
+        </ul>
+      </div>
+
+      <form id="loginForm" class="card" novalidate aria-labelledby="loginTitle">
+        <h2 id="loginTitle">Acessar painel</h2>
+
+        <div class="field">
+          <label for="email">E‑mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" required />
+          <small class="error" id="emailError" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Senha</label>
+          <div class="password">
+            <input id="password" name="password" type="password" minlength="6" required placeholder="••••••••" />
+            <button type="button" id="togglePwd" class="toggle" aria-label="Mostrar senha">👁️</button>
+          </div>
+          <small class="error" id="passwordError" aria-live="polite"></small>
+        </div>
+
+        <div class="field field--row">
+          <label class="checkbox">
+            <input type="checkbox" id="remember">
+            <span>lembrar de mim</span>
+          </label>
+          <a href="#" class="link"> Esqueci minha senha</a>
+        </div>
+
+        <button id="submitBtn" class="btn btn--primary" type="submit">
+          <span class="btn__text">Entrar</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p class="hint">Ainda não tem conta?</p><a href="#" class="link"> Criar agora</a>
+
+        <div id="formMessage" class="form-message" role="alert" aria-live="assertive"></div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <small>© 2025 OrionHost</small>
+      <nav class="footer__links">
+        <a href="#" class="link">Status</a>
+        <a href="#" class="link">Privacidade</a>
+        <a href="#" class="link">Termos</a>
+      </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

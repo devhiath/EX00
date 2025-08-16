@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="36" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OrionHost">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Orion symbol: stylized constellation -->
+  <g transform="translate(10,8)" filter="url(#glow)">
+    <circle cx="8" cy="8" r="3.5" fill="url(#g)"/>
+    <circle cx="44" cy="6" r="3.5" fill="url(#g)"/>
+    <circle cx="22" cy="18" r="3.5" fill="url(#g)"/>
+    <circle cx="58" cy="22" r="3.5" fill="url(#g)"/>
+    <circle cx="34" cy="34" r="3.5" fill="url(#g)"/>
+    <path d="M8 8 L22 18 L34 34 L58 22 M22 18 L44 6" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(80, 40)" fill="url(#g)">
+    <path d="M0 -3.5C0 -17 7 -24 20 -24C33 -24 40 -17 40 -3.5C40 10 33 17 20 17C7 17 0 10 0 -3.5ZM11 -3.5C11 4.5 14.5 8 20 8C25.5 8 29 -4.5 29 -3.5C29 -12 25.5 -15.5 20 -15.5C14.5 -15.5 11 -12 11 -3.5Z"/>
+    <path d="M53 -23H64V16H53V-23Z"/>
+    <path d="M73 16V-23H83.8L95 -8.5L106.2 -23H117V16H106V-5L95 - -5L84 -5V16H73Z" transform="translate(0,0)"/>
+  </g>
+  <text x="180" y="42" font-family="ui-sans-serif, system-ui, Segoe UI, Roboto" font-size="28" font-weight="800" fill="url(#g)">OrionHost</text>
+</svg>
